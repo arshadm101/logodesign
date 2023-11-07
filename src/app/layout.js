@@ -1,5 +1,5 @@
 // Import Fonts
-import { primary, integralCF,poppins } from "./configs/fonts";
+import { primary, integralCF, poppins, roboto, raleway } from "./configs/fonts";
 import Script from 'next/script';
 
 // Import Css
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
                     gtag('config', 'AW-11394693744');
                 `}
             </Script>
-            <body className={`${primary.variable} ${integralCF.variable}  ${poppins.variable}`}>
+            <body className={`${primary.variable} ${integralCF.variable} ${poppins.variable} ${roboto.variable} ${raleway.variable}`}>
                 <noscript>
                     <iframe src="https://www.facebook.com/tr?id=3404182666490229&ev=PageView&noscript=1" className="hidden"></iframe>
                 </noscript>

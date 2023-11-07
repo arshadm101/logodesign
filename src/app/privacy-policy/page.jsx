@@ -271,7 +271,7 @@ const Page = () => {
                             Address:
                         </h3>
                         <p className="text-[15px] leading-[25px] text-[#202020] font-normal mb-5">
-                            One World Trade Center, Suite 8500, New York, 10007, United States
+                            One World Trade Center, Suite 8500, New York, New York, 10007, United States
                         </p>
                         <h3 className="text-lg sm:text-xl font-sans text-[#202020] font-semibold leading-none mb-2">
                             E-mail:

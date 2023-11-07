@@ -1,0 +1,100 @@
+[
+    {
+        "id": 0,
+        "value": "logo",
+        "label": "Logo",
+        "packages": [
+            {
+                "id": 0,
+                "name": "Logo Basic",
+                "discountedPrice": "$35.00",
+                "originalPrice": "Was $117.00",
+                "list": [
+                    "2 Original Logo Concepts",
+                    "2 Dedicated Logo Designer",
+                    "2 Revisions",
+                    "With Grey Scale Format",
+                    "Free Icon Design",
+                    "Formats: JPEG Only",
+                    "24 - 48 Hours Turn Around Time",
+                    "100% Satisfaction",
+                    "100% Ownership Rights",
+                    "Money Back Guarantee",
+                    "Dedicated Account Manager"
+                ]
+            },
+            {
+                "id": 1,
+                "name": "Logo Plus",
+                "discountedPrice": "$119.00",
+                "originalPrice": "Was $698.00",
+                "list": [
+                    "8 Original Logo Concepts",
+                    "4 Dedicated Logo Designer (Industry Specific)",
+                    "Unlimited Revisions",
+                    "Stationery Design (Business Card, Letterhead, Envelope)",
+                    "Email Signature Design",
+                    "With Grey Scale Format",
+                    "Free Icon Design",
+                    "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+                    "24 - 48 Hours Turn Around Time",
+                    "100% Satisfaction",
+                    "100% Ownership Rights",
+                    "Money Back Guarantee",
+                    "Dedicated Account Manager"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Logo Infinite",
+                "discountedPrice": "$249.00",
+                "originalPrice": "Was $830.00",
+                "list": [
+                    "Unlimited Original Logo Concepts",
+                    "8 Dedicated Logo Designer (Industry Specific)",
+                    "Unlimited Revisions",
+                    "Stationery Design (Business Card, Letterhead, Envelope)",
+                    "250 Business Cards",
+                    "Email Signature Design",
+                    "Social Media Designs (Facebook, Twitter, Instagram)",
+                    "With Grey Scale Format",
+                    "Free Icon Design",
+                    "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+                    "24 - 48 Hours Turn Around Time",
+                    "100% Satisfaction",
+                    "100% Ownership Rights",
+                    "Money Back Guarantee",
+                    "Dedicated Account Manager"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Logo Platinum",
+                "discountedPrice": "$499.00",
+                "originalPrice": "Was $1663.00",
+                "list": [
+                    "Unlimited Original Logo Concepts",
+                    "8 Dedicated Logo Designer (Industry Specific)",
+                    "Website Design (Industry Specific)",
+                    "Unlimited Revisions",
+                    "3 Page Custom Website",
+                    "Stationery Design (Business Card, Letterhead, Envelope)",
+                    "Brand Book",
+                    "500 Business Cards",
+                    "Animated Logo",
+                    "Email Signature Design",
+                    "Social Media Designs (Facebook, Twitter, Instagram)",
+                    "2 Sided Flyer OR Bi-Fold Brochure Design",
+                    "With Grey Scale Format",
+                    "Free Icon Design",
+                    "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+                    "24 - 48 Hours Turn Around Time",
+                    "100% Satisfaction",
+                    "100% Ownership Rights",
+                    "Money Back Guarantee",
+                    "Dedicated Account Manager"
+                ]
+            }
+        ]
+    }
+]

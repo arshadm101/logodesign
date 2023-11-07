@@ -91,7 +91,7 @@ const Footer = () => {
     ];
     const contactLinks = [
         {
-            text: "One World Trade Center, Suite 8500, New York, 10007, United States",
+            text: "One World Trade Center, Suite 8500, New York, New York, 10007, United States",
             link: "/contact-us",
             icon: mapmarker
         },

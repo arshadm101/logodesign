@@ -13,7 +13,7 @@ const Header = () => {
             <Navbar className="max-w-none px-0 py-0 absolute top-0 left-0 z-[9999] rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
                 <div className="container">
                     <div className="flex items-center h-24 justify-center md:justify-between">
-                        <Link href="/special-offer">
+                        <Link href="/">
                             <Image src={logo} alt="logo" />
                         </Link>
                         <div className="hidden md:flex items-center gap-3">
