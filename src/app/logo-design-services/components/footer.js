@@ -146,7 +146,7 @@ const Footer = () => {
                     <div className="text-center border-top-2">
                         <h4 className="font-semibold text-[18px] pb-3 text-[#f73600]">Disclaimer:
 </h4>
-                        <p className="text-[11px] font-roboto">The logo, name and graphics of The Design Verse and its products & services are the trademarks of The Design Verse. All other company names, brand names, trademarks and logos mentioned on this website are the property of their respective owners and do not constitute or imply endorsement, sponsorship or recommendation thereof by The Design Verse vand do not constitute or imply endorsement, sponsorship or recommendation of The Design Verse by the respective trademark owner.
+                        <p className="text-[11px] font-roboto">The logo, name and graphics of The Creative Logo Design and its products & services are the trademarks of The Creative Logo Design. All other company names, brand names, trademarks and logos mentioned on this website are the property of their respective owners and do not constitute or imply endorsement, sponsorship or recommendation thereof by The Creative Logo Design vand do not constitute or imply endorsement, sponsorship or recommendation of The Creative Logo Design by the respective trademark owner.
 
 </p>
                     </div>

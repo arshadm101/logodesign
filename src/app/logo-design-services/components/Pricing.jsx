@@ -111,7 +111,7 @@ const Pricing = ({content}) => {
                                 <div className="container md:max-w-6xl lg:max-w-6xl mb-5">
                                     <div className="grid grid-cols-1 items-center gap-x-3">
                                         <h2 className="text-[30px] text-center pt-10 text-[#fff] font-[700] mb-3">Logo Pricing Simplified</h2>
-                                            <p className="text-[16px] text-[#fff] ">The Design Verse has proudly catered unique logo design solutions with affordable packages <br/> to meet your business requirements.</p>
+                                            <p className="text-[16px] text-[#fff] ">The Creative Logo Design has proudly catered unique logo design solutions with affordable packages <br/> to meet your business requirements.</p>
 
                                     </div>
                                 </div>
