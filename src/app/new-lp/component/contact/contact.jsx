@@ -2,16 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from '../../../new-lp/component/contact/contact.module.css'
-import logo1 from 'media/new-lp/contact/new1.png'
-
+import logo1 from 'media/new-lp/contact/new1.PNG'
+import arr1 from 'media/new-lp/happy/arr1.PNG'
+import arr2 from 'media/new-lp/happy/arr2.PNG'
 
 const Contact = () => {
-
-
-
-
-
-
 
     return (
         <>
@@ -22,7 +17,6 @@ const Contact = () => {
                             <div className={`${styles.longa}`}>
                                 <h2 className="text-[66px] font-[700] mb-5">Contact Us</h2>
                             </div>
-
                             <input type="text" class="placeholder:text-[#6c757d] bg-transparent border-[#ced4da] w-full h-14 py-7 rounded-[20px] px-6 border" placeholder="Enter Your Name" name="name"></input>
                             <input type="text" class="placeholder:text-[#6c757d] bg-transparent border-[#ced4da] w-full h-14 py-7 rounded-[20px] px-6 border mt-4" placeholder="Enter Your Email" name="name"></input>
                             <input type="number" class="placeholder:text-[#6c757d] bg-transparent border-[#ced4da] w-full h-14 py-7 rounded-[20px] px-6 border mt-4" placeholder="Phone Number" name="name"></input>
@@ -30,11 +24,8 @@ const Contact = () => {
                             <input type="submit" class="bg-[#dd1920] text-[#fff] py-3 px-6  md:rounded-full text-[16px] font-[400] mt-5" value='SUBMIT NOW' />
                         </div>
                         <div>
-                            <Image src={logo1} />
+                            <Image src={logo1}  alt="happy"/>
                         </div>
-
-
-
                     </div>
                 </div>
             </section>

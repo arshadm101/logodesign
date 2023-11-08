@@ -6,8 +6,8 @@ import logo1 from 'media/new-lp/happy/1.webp'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
-import logo11 from 'media/new-lp/happy/arr1.png'
-import logo2 from 'media/new-lp/happy/arr2.png'
+import logo11 from 'media/new-lp/happy/arr1.PNG'
+import logo2 from 'media/new-lp/happy/arr2.PNG'
 
 const Happy = () => {
 

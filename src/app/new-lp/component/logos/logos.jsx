@@ -2,15 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from '../logos/logos.module.css'
-import onep from 'media/new-lp/logo/loop.png'
+import onep from 'media/new-lp/logo/loop.PNG'
 
 
 const Logos = () => {
-
-
-
-
-
 
 
     return (
