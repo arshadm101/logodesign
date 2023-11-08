@@ -10,6 +10,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import One from "media/new-lp/homeslider/1.webp";
 
 
+
+
 const Banner = () => {
 
     const [slidesPerView, setSlidesPerView] = useState(3);
