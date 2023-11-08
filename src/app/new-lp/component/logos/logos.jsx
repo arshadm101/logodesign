@@ -6,6 +6,9 @@ import onep from 'media/new-lp/logo/loop.png'
 import { useState } from "react";
 import Modal from "../modal/modal";
 
+
+
+
 const Logos = () => {
 
 
