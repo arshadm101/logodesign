@@ -41,25 +41,25 @@ const Header = () => {
     const navList = (
         <ul className="font-roboto sm:block md:block lg:hidden  xl:hidden lg:items-center gap-6 lg:h-full rounded-2xl bg-black lg:bg-transparent lg:rounded-none py-5 lg:py-0 px-5 lg:px-0">
                       
-                      <Link href='' className="flex items-center gap-x-2 sm:w-[150px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
+                      <Link href='javascript:$zopim.livechat.window.show();' className="flex items-center gap-x-2 sm:w-[150px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
                    <Image src="/logodesignnew/chat.svg" alt="Messgae" width={20} height={21} />
                     <span className="text-sm xl:text-lg font-medium"> Live Chat</span>
                   
             </Link>
-                    <Link href='tel:3476073636' className="flex items-center gap-x-2 sm:w-[290px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
+                    <Link href='tel:8556666675' className="flex items-center gap-x-2 sm:w-[290px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
                     <Image src="/logodesignnew/call.png" alt="call"  width={20} height={21} />
                         <span className="text-sm xl:text-lg font-medium"> Call Us: (855) 251-3020</span>
                     
                     </Link>
                     <button  type="button" onClick={openModal} className="bg-[#f73600] hover:bg-[#fdc400] duration-300 ease-in-out flex items-center gap-3 w-full justify-center h-[45px] text-[13px] rounded-full transition-all" >
-                        <span className="text-[14px] font-medium"  > View Pricing</span>
+                        <span className="text-[14px] font-medium" > View Pricing</span>
                     </button> 
         </ul>
     );
     return (
         <>
         <header className="">
-            <Navbar className="left-0 right-0 font-roboto px-0 py-0 absolute top-0 z-[9999] rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none max-w-screen-1xl">
+            <Navbar className="left-0 right-0 font-roboto px-0 py-0 absolute top-0 z-[40] rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none max-w-screen-1xl">
                 <div className="container max-w-6xl mx-auto">
                     <div className="flex items-center h-24 font-roboto">
                         <Link href="/">
@@ -69,13 +69,13 @@ const Header = () => {
                             {navList}
                         </div>
                         <div className="hidden xl:flex items-center gap-0 text-white">
-                            <Link href='' className="flex items-center gap-x-2 sm:w-[140px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
+                            <Link href='javascript:$zopim.livechat.window.show();' className="flex items-center gap-x-2 sm:w-[140px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
                    <Image src="/logodesignnew/chat.svg" alt="Messgae" width={20} height={21} />
                     <span className="text-sm xl:text-lg font-medium "> Live Chat</span>
                   
                 </Link>
                 <span className="w-[1px] h-auto bg-white text-transparent">|</span>
-                    <Link href='tel:3476073636' className="flex items-center gap-x-2 sm:w-[270px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all pr-6" >
+                    <Link href='tel:8556666675' className="flex items-center gap-x-2 sm:w-[270px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all pr-6" >
                     <Image src="/logodesignnew/call.png" alt="call"  width={20} height={21} />
                         <span className="text-sm xl:text-lg font-medium "> Call Us: (855) 251-3020</span>
                     

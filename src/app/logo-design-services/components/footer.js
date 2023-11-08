@@ -134,10 +134,10 @@ const Footer = () => {
                 <div className="container max-w-6xl">
                     <div className="grid grid-flow-row lg:grid-cols-3 xl:grid-cols-3 items-center gap-x-3 mb-7 pb-4 border-[#aeaeae] border-b-[2px] border-solid grid-cols-1 text-center justify-center">
                         <div className="text-[14px] font-semibold px-8">
-                           <Link href="/" className="px-2 hover:text-[#f73600]">Terms & Conditions</Link> <span className="h-[50px] w-1 border-solid border-l-2 border-[#fff]"></span> <Link href="/"  className="px-3 hover:text-[#f73600]">Privacy Policy</Link>
+                           <Link href="/terms-and-conditions/" className="px-2 hover:text-[#f73600]">Terms & Conditions</Link> <span className="h-[50px] w-1 border-solid border-l-2 border-[#fff]"></span> <Link href="/privacy-policy/"  className="px-3 hover:text-[#f73600]">Privacy Policy</Link>
                         </div>
                         <div className="text-white text-[12px] font-roboto">
-                            <p>Copyright © 2023 The Design Verse | All rights reserved.</p>
+                            <p>Copyright © 2023 The Creative Logo Designs | All rights reserved.</p>
                         </div>
                         <div className="">
                             <Image src="/logodesignnew/footer-card-icon.webp" height={77} width={334} className="w-[334] h-[77] mx-auto"/>

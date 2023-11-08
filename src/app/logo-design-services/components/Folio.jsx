@@ -26,7 +26,7 @@ const Folio = ({ content }) => {
                         <div className="text-center">
                             <div className="container md:max-w-6xl lg:max-w-6xl mb-5">
                                 <div className="grid grid-flow-row grid-cols-1 items-center gap-x-3">
-                                    <h2 className="text-[30px] text-center pt-10 text-[#060f32] font-extrabold">Have a Look at What we have Designed Throughout the years</h2>
+                                    <h2 className="text-[30px] text-center pt-10 text-[#060f32] font-[700]">Have a Look at What we have Designed Throughout the years</h2>
 
                 <p className="text-[16px] text-[#74767d]">We take an integrated approach to creating highly engaging digital properties & brand focused creative solutions. We believe in providing highly creative and exclusive logo designs that give an edge over your competitors.</p>
                                 </div>

@@ -31,7 +31,7 @@ function Timer() {
           cy={radius}
           r={radius - 7}
           fill="none"
-          stroke={strokeColor}
+          stroke={strokeColor} // Change the color here
           strokeWidth="7"
           strokeLinecap="round"
           strokeDasharray={dashArray}

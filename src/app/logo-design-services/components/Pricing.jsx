@@ -37,8 +37,8 @@ const Pricing = ({content}) => {
     const sectionStyle3 = {
         backgroundImage: `url('../logodesignnew/packages_bg.webp')`, // Adjust the path to your image
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'top',
+        // backgroundRepeat: 'no-repeat',
+        // backgroundPosition: 'top',
         // You can also set other background properties here, like background-color.
       };
       const settings = {
@@ -110,7 +110,7 @@ const Pricing = ({content}) => {
                             <div className="text-center">
                                 <div className="container md:max-w-6xl lg:max-w-6xl mb-5">
                                     <div className="grid grid-cols-1 items-center gap-x-3">
-                                        <h2 className="text-[30px] text-center pt-10 text-[#fff] font-extrabold mb-3">Logo Pricing Simplified</h2>
+                                        <h2 className="text-[30px] text-center pt-10 text-[#fff] font-[700] mb-3">Logo Pricing Simplified</h2>
                                             <p className="text-[16px] text-[#fff] ">The Design Verse has proudly catered unique logo design solutions with affordable packages <br/> to meet your business requirements.</p>
 
                                     </div>
@@ -177,7 +177,7 @@ const Pricing = ({content}) => {
                                <div className="">
                                 <div className="customgap block flex-row gap-x-4 gap-4 gap-y-4 md:flex lg:flex xl:flex">
                                     <div className="basis-[100%] md:basis-[70%] lg:basis-[70%] xl:basis-[70%]">
-                                    <h2 className="py-10 px-10 text-center font-bold text-[25px] md:text-[50px] lg:text-[50px] xl:text-[50px]">Logo Infinity</h2>
+                                    <h2 className="py-10 px-10 text-center font-[700] text-[25px] md:text-[50px] lg:text-[50px] xl:text-[50px]">Logo Infinity</h2>
                                         <div className="block justify-between md:flex xl:flex lg:flex">
                                             <ul className="py-5 combolist">
                                                     <li> Unlimited Original Logo Concepts</li>
@@ -212,7 +212,7 @@ const Pricing = ({content}) => {
                                     <div className="">
                                         <h3 class="del">
                                             <span class="inner"></span>
-                                            <del className="text-[40px] font-semibold">$2663</del>
+                                            <del className="text-[40px] font-semibold border-red-500">$2663</del>
                                         </h3>
                                         <h1 class="font-semibold text-[2em]">$799</h1>
                                         <button onClick={openModal} type="button" class="bg-[#fdc400] hover:bg-[#f73600] duration-300 ease-in-out  flex items-center mx-auto gap-3 sm:w-[150px] justify-center h-[45px] text-[13px]  rounded-full transition-all"><span class="text-[14px] font-medium"> Order Now</span></button>
@@ -227,7 +227,7 @@ const Pricing = ({content}) => {
                             <div className="">
                                 <div className="customgap block flex-row gap-x-4 gap-4 gap-y-4 md:flex lg:flex xl:flex">
                                     <div className="basis-[100%] md:basis-[70%] lg:basis-[70%] xl:basis-[70%]">
-                                    <h2 className="py-10 px-10 text-center font-bold text-[25px] md:text-[50px] lg:text-[50px] xl:text-[50px]">Logo Combo</h2>
+                                    <h2 className="py-10 px-10 text-center font-[700] text-[25px] md:text-[50px] lg:text-[50px] xl:text-[50px]">Logo Combo</h2>
                                         <div className="block justify-between md:flex xl:flex lg:flex">
                                             <ul className="py-5 combolist">
                                                     <li> Unlimited Original Logo Concepts</li>

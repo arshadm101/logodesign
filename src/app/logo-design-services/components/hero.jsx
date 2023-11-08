@@ -9,14 +9,118 @@ import formafter from "public/logodesignnew/form_after.webp";
 import Timer from '../components/Counter';
 // import CountdownTimer from "./CountdownTimer";
 import { useState, useEffect } from 'react';
+import Axios from "axios";
+import { usePathname } from "next/navigation";
 // Components
 import CTA from "C/CTA";
 import Form from "C/hero/form/form";
 
 const Hero = ({ content }) => {
+    const [ip, setIP] = useState('');
+    //creating function to load ip address from the API
+    const getIPData = async () => {
+        const res = await Axios.get('https://geolocation-db.com/json/');
+        setIP(res.data);
+    }
+    useEffect(() => {
+        getIPData()
+    }, [])
+    // For Page
+    let page = usePathname();
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        services: "Not Selected",
+        message: "",
+        pageURL: page,
+    });
+    const handleDataChange = (e) => {
+        setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    }
+    const [formStatus, setFormStatus] = useState("Get A Free Quote");
+    const [errors, setErrors] = useState({});
+    const [isDisabled, setIsDisabled] = useState(false);
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = 'Name is required';
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = 'Valid email is required';
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = 'Valid phone is required';
+        }
+        return errors;
+    };
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        setIsDisabled(true);
+        setFormStatus("Processing...");
 
+        const errors = formValidateHandle();
+        setErrors(errors);
 
-    const { subtitle, title, desc, img, form, page } = content;
+        if (Object.keys(errors).length === 0) {
+            let headersList = {
+                "Accept": "*/*",
+                "Content-Type": "application/json"
+            }
+
+            let bodyContent = JSON.stringify(data);
+            let reqOptions = {
+                url: "/api/email",
+                method: "POST",
+                headers: headersList,
+                data: bodyContent,
+            }
+            await Axios.request(reqOptions);
+        } else {
+            setFormStatus("Failed...");
+        }
+
+        if (Object.keys(errors).length === 0) {
+            // For Date
+            let newDate = new Date();
+            let date = newDate.getDate();
+            let month = newDate.getMonth() + 1;
+            let year = newDate.getFullYear();
+            // For Time
+            let today = new Date();
+            let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+            let headersList = {
+                "Accept": "*/*",
+                "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                "Content-Type": "application/json"
+            }
+
+            let bodyContent = JSON.stringify({
+                "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+                "Brand": "Creative Logo Designs",
+                "Page": `${page}`,
+                "Date": `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`,
+                "Time": time,
+                "JSON": data
+            });
+            let reqOptions = {
+                url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
+                method: "POST",
+                headers: headersList,
+                data: bodyContent,
+            }
+            await Axios.request(reqOptions);
+            window.location.href = "/thank-you";
+        }
+    }
+
+    const { subtitle, title, desc, img, form } = content;
 
     const sectionStyle = {
         backgroundImage: `url('../logodesignnew/main_banner_res.webp')`, // Adjust the path to your image
@@ -37,10 +141,10 @@ const Hero = ({ content }) => {
         <div className="pt-[120px]">
             <div className="container md:max-w-6xl lg:max-w-6xl xl:max-w-8xl">
                     
-                <div className="block items-center gap-x-5 md:flex lg:flex xl:flex mx-auto text-center md:text-left xl:text-left lg:text-left ">
+                <div className="block pt-5 gap-x-5 md:flex lg:flex xl:flex mx-auto text-center md:text-left xl:text-left lg:text-left ">
                    
                     <div className="basis-[100%] sm:basis-[100%] md:basis-[40%] lg:basis-[40%] xl:basis-[40%]">
-                        <Timer className="mt-5 justify-center xl:justify-left lg:justify-left md:justify-left"></Timer>
+                        <Timer className="mt-10 justify-center xl:justify-left lg:justify-left md:justify-left"></Timer>
                      
                         <h4 className="text-[22px] leading-8 font-samibold pt-3  md:text-[30px] lg:text-[30px] xl:text-[30px]">Activate Your Coupon <br /> Now</h4>
                         <div className="block mx-auto justify-center items-center md:flex lg:flex xl:flex md:justify-start lg:justify-start xl:justify-start">
@@ -88,24 +192,34 @@ const Hero = ({ content }) => {
                                     </div>
                                 </div>
                                 <div className="bg-blue-gray-50 pb-5 pt-4 px-3 rounded-b-3xl ">
-                                    <form className="" method="POST">
+                                    <form  className="" method="POST" autoComplete="off">
                                         <div class="w-full">
-                                            <input type="text" placeholder="Enter Your Name" name="name" required
-                                                className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-gray-800 font-roboto" />
+                                            <input  onChange={handleDataChange} type="text" placeholder="Enter Your Name" name="name" 
+                                                className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-gray-800 font-roboto" required/>
+                                         {
+                                errors.name && <span className="text-[12px] block p-2 font-medium text-red">
+                                    {errors.name}
+                                </span>
+                            }
                                         </div>
                                         <div class="w-full">
-                                            <input type="email" placeholder="Enter Your Email" name="email" required
-                                                className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-blue-300 font-roboto" />
+                                            <input onChange={handleDataChange} type="email" placeholder="Enter Your Email" name="email"   className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-blue-300 font-roboto" required/>
+                                            {
+                                errors.email && <span className="text-[12px] block p-2 font-medium text-red">
+                                    {errors.email}
+                                </span>
+                            }
                                         </div>
                                         <div class="w-full">
-                                            <input type="text" placeholder="Enter Your Phone" name="phone" required
-                                                className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-blue-300 font-roboto" />
+                                            <input  onChange={handleDataChange} type="number" placeholder="Enter Your Phone" name="phone"  className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-blue-300 font-roboto" required/>
+                                            {
+                                errors.phone && <span className="text-[12px] block p-2 font-medium text-red">
+                                    {errors.phone}
+                                </span>
+                            }
                                         </div>
                                         <div class="w-full">
-                                            <button
-                                                className="bg_gr text-[18px] text-white font-semibold text-lg py-4 rounded-full uppercase w-full"
-                                                id="signupBtn" type="submit">
-                                                Submit your Request
+                                            <button onClick={handleFormSubmit} className="bg_gr text-[18px] text-white font-semibold text-lg py-4 rounded-full uppercase w-full" id="signupBtn" type="submit" value={formStatus} disabled={isDisabled}>   Submit your Request
                                             </button>
                                         </div>
                                     </form>

@@ -307,3 +307,8 @@ body {
     background: -webkit-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%);
     /* background: -ms-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%); */
 }
+
+.modelbg{
+   box-shadow: 10px 10px 10px 10px #262626;
+   
+}

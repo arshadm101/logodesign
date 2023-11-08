@@ -82,20 +82,20 @@ const Expe = () => {
                 <Slider {...sliderSettings}> 
                    <span className="border-gray-100 border-r-[1px] py-4 h-[115px] text-[15px] pr-3"> <h4>More than a Decade of Experience in the Online Design Industry</h4></span>
                    <span className=" text-center border-gray-100 border-r-[1px] py-4 h-[115px]"> 
-                        <h4 className="text-[27px] font-extrabold">9000+</h4> <p>Wordmark Logos</p>
+                        <h4 className="text-[27px] font-[700]">9000+</h4> <p>Wordmark Logos</p>
                    </span>
                    <span className="text-center border-gray-100 border-r-[1px] py-4 h-[115px]"> 
-                        <h4 className="text-[27px] font-extrabold">4800+</h4> <p>Iconic/Symbolic Logos
+                        <h4 className="text-[27px] font-[700]">4800+</h4> <p className="px-2">Iconic/Symbolic Logos
 </p>
                    </span>
                    <span className="text-center  border-gray-100 border-r-[1px] py-4 h-[115px]"> 
-                        <h4 className="text-[27px] font-extrabold">7000+</h4> <p>2D Logos</p>
+                        <h4 className="text-[27px] font-[700]">7000+</h4> <p>2D Logos</p>
                    </span>
                    <span className="text-center  border-gray-100 border-r-[1px] py-4 h-[115px]"> 
-                        <h4 className="text-[27px] font-extrabold">3700+</h4> <p>3D Logos</p>
+                        <h4 className="text-[27px] font-[700]">3700+</h4> <p>3D Logos</p>
                    </span>
                    <span className="text-center py-4 h-[115px]"> 
-                        <h4 className="text-[27px] font-extrabold">4200+</h4> <p>Illustrative Logos</p>
+                        <h4 className="text-[27px] font-[700]">4200+</h4> <p>Illustrative Logos</p>
                    </span>
                    </Slider> 
                 </div>
