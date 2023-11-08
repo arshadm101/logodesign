@@ -127,15 +127,11 @@ const Modal = ({ isOpen, onClose }) => {
 </h2>
                                 </div>
                                 <div class="font-poppins relative bg-red-700 rounded-t-3xl text-center font-semibold shadow-md ">
-                                   
                                     <div
                                         class="bg-[#fff] uppercase text-bold leading-7 pt-[9px] pb-[9px] text-black text-[25px] relative">
                                         <h3>
                                        <span className='text-[#f73600]'>70% OFF</span> TILL MIDNIGHT
-                                        <span className="text-[12px] font-[400] block">Fill out this brief form to get your <span className='font-[700]'> DISCOUNT RESERVED.</span>
-
-</span><br />
-                                           
+                                        <span className="text-[12px] font-[400] block">Fill out this brief form to get your <span className='font-[700]'> DISCOUNT RESERVED.</span></span> 
                                         </h3>
                                     </div>
                                    
