@@ -116,6 +116,7 @@ const Modal = ({ isOpen, onClose }) => {
   const modalClasses = isOpen ? 'fixed inset-0 flex items-center justify-center z-50 modelbg' : 'show';
 
   return (
+    
     <div className={modalClasses}>
       <div className=" p-6 rounded-lg">
         
