@@ -17,14 +17,21 @@ import Modal from "../modal/modal";
 const Pricing = () => {
 
 
-    var settings = {
-
-        dots: false,
-        arrows: false,
-        autoplay: true,
+    const settings = {
+        dots: true,
+        arrow:false,
+        infinite: true,
+        speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1,
-    };
+        slidesToScroll: 3,
+        customPaging: function (i) {
+          return (
+            <div className="custom-dotpric">
+              
+            </div>
+          );
+        },
+      };
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => {
@@ -47,7 +54,7 @@ const Pricing = () => {
                     </div>
                     <div class="grid grid-cols-1">
 
-                        <Slider {...settings} className="newtown">
+                        <Slider {...settings} className="pricingnewtown">
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo1} />
 

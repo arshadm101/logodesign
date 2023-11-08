@@ -26,7 +26,7 @@ const Sliderban = () => {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 0,
-        speed: 2000,
+        speed: 5000,
         pauseOnHover: false,
         cssEase: 'linear',
         slidesToShow: 7,

@@ -319,7 +319,11 @@ body {
 /* alim css */
 
 
-.newtown .slick-track {
+.pricingnewtown .slick-track {
+    display: flex;
+    gap: 30px;
+}
+.pricingnewtown .slick-track {
     display: flex;
     gap: 30px;
 }
@@ -327,24 +331,24 @@ body {
 
 
 
-.newtown ::-webkit-scrollbar {
+.pricingnewtown ::-webkit-scrollbar {
     width: 10px;
   }
   
   /* Track */
-  .newtown  ::-webkit-scrollbar-track {
+  .pricingnewtown  ::-webkit-scrollbar-track {
     background: unset; 
   }
    
   /* Handle */
-  .newtown  ::-webkit-scrollbar-thumb {
+  .pricingnewtown  ::-webkit-scrollbar-thumb {
     background: #555; 
     border-radius: 50px;
     opacity: 0.4;
   }
   
   /* Handle on hover */
-  .newtown  ::-webkit-scrollbar-thumb:hover {
+  .pricingnewtown  ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
 
@@ -360,3 +364,64 @@ body {
     top: 50%;
     z-index: 999;
 } 
+
+.newtown ul.slick-dots {
+    display: flex!important;
+    gap: 25px;
+    justify-content: center;
+}
+
+.newtown .custom-dot {
+    background-color: white;
+    display: unset;
+}
+
+.newtown .slick-active .custom-dot:after {
+    background-color: red;
+    display: unset;
+}
+
+.newtown .custom-dot:after {
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 20px;
+    height: 8px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+.pricingnewtown ul.slick-dots {
+    display: flex!important;
+    gap: 25px;
+    justify-content: center;
+}
+
+.pricingnewtown .custom-dotpric {
+    background-color: white;
+    display: unset;
+}
+
+.pricingnewtown .slick-active .custom-dotpric:after {
+    background-color: red;
+    display: unset;
+}
+
+.pricingnewtown .custom-dotpric:after {
+    position: absolute;
+    content: '';
+    background-color: #e0dede;
+    width: 20px;
+    height: 8px;
+    border-radius: 50px;
+}
+
+.pricingnewtown button{
+    opacity: 0;
+}
