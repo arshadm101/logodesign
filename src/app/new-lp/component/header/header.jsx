@@ -1,3 +1,4 @@
+"use client"
 // Imports Components
 import Image from "next/image";
 // Import Images
@@ -6,7 +7,12 @@ import Link from "next/link";
 import styles from '../header/header.module.css'
 
 
+
 const Header = () => {
+
+
+ 
+
     return (
         <>
             <section className={`${styles.post} font-poppins relative`}>
@@ -22,6 +28,8 @@ const Header = () => {
                     </div>
                 </div>
             </section>
+
+            
         </>
     )
 }

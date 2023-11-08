@@ -60,7 +60,7 @@ const Banner = () => {
                             <h4 className='text-[25px] leading-[30px] py-5 pb-10 font-[600] text-[#153b6b]'>SIGN UP NOW AND GET UP TO <span className="text-[#dd1920]">70% OFF</span> </h4>
                             <div className="relative" >
                                 <input type="text" className="placeholder:text-[#757b81] bg-transparent border-gray-400 w-10/12 h-16 py-7 rounded-full px-6 border" name="name" placeholder="Enter Your Name" required="" />
-                                <div className="absolute right-28 top-1.5   bg-[#dd1920] text-[#fff] py-3   text-center md:rounded-full text-[16px] font-medium w-1/5">
+                                <div className="absolute right-[7.5rem] top-1.5   bg-[#dd1920] text-[#fff] py-3   text-center md:rounded-full text-[16px] font-medium w-1/5">
                                     <input type="submit" value='Next' className="text-[18px]" />
                                 </div>
                             </div>

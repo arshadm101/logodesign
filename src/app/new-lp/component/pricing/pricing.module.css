@@ -35,7 +35,7 @@ overflow: hidden;
 }
 
 .flip:hover img{
-    filter: grayscale(1);
+    filter: brightness(0) invert(1);
 }
 .longa{
     position: relative;

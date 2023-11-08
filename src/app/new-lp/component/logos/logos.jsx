@@ -2,10 +2,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from '../logos/logos.module.css'
-import onep from 'media/new-lp/logo/loop.PNG'
-
+import onep from 'media/new-lp/logo/loop.png'
+import { useState } from "react";
+import Modal from "../modal/modal";
 
 const Logos = () => {
+
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+
+
 
 
     return (
@@ -27,7 +39,7 @@ const Logos = () => {
                                     <p className="text-[17px] font-[400] text-[#506b8f] font-poppins mt-3">Goto Logo Experts is a digital agency that not only strives to provide its customers with top-notch logo design services, but also the best customer service that they have experienced. Comprising of a team of dedicated professionals, the team has to its credit thousands of completed project deliveries and more.</p>
                                     <div className="mt-5 flex gap-x-5">
                                         <Link className="bg-[#dd1920] text-[#fff] py-3 px-11  md:rounded-full text-[16px] font-medium" href="#">Live Chat</Link>
-                                        <Link className="bg-[#dd1920] text-[#fff] py-3 px-11  md:rounded-full text-[16px] font-medium" href="#">Get Quote</Link>
+                                        <Link onClick={openModal} className="bg-[#dd1920] text-[#fff] py-3 px-11  md:rounded-full text-[16px] font-medium" href="#">Get Quote</Link>
                                     </div>
                                 </div>
                             </div>
@@ -36,6 +48,9 @@ const Logos = () => {
 
                 </div>
             </section>
+
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
+
         </>
     )
 }

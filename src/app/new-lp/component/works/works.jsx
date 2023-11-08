@@ -24,21 +24,21 @@ const Works = () => {
                     </div>
 
                     <div class="grid grid-cols-3 gap-10">
-                        <div className="hover:bg-[#de182a] hover:text-[#ffff] p-[20px] rounded-2xl">
+                        <div className="hover:bg-[#de182a] hover:text-[#ffff] p-[20px] rounded-2xl hover:transition-none">
                             <div className={styles.box}>
                                 <Image src={logo1} className="w-[80px] block m-auto" />
                             </div>
                             <h3 className="text-[28px] font-[500] text-center">Details</h3>
                             <p className="text-[17px] font-[400] text-center">Answer a few questions about your <br></br> business, your industry and your <br></br> audience and we’ll take it from there.</p>
                         </div>
-                        <div className="hover:bg-[#de182a] hover:text-[#ffff] p-[20px] rounded-2xl">
+                        <div className="hover:bg-[#de182a] hover:text-[#ffff] p-[20px] rounded-2xl hover:transition-none">
                         <div className={styles.box}>
                                 <Image src={logo2} className="w-[80px] block m-auto" />
                             </div>
                             <h3 className="text-[28px] font-[500] text-center">Design</h3>
                             <p className="text-[17px] font-[400] text-center">Our design team gets involved and<br></br> we start crafting unique logo options <br></br> to reflect your business.</p>
                         </div>
-                        <div className="hover:bg-[#de182a] hover:text-[#ffff] p-[20px] rounded-2xl">
+                        <div className="hover:bg-[#de182a] hover:text-[#ffff] p-[20px] rounded-2xl hover:transition-none">
                         <div className={styles.box}>
                                 <Image src={logo3} className="w-[80px] block m-auto" />
                             </div>

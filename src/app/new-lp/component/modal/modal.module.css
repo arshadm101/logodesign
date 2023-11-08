@@ -1,0 +1,25 @@
+.box{
+    width: 142px;
+    height: 142px;
+    margin: auto auto 20px;
+    background: #f2f3f7;
+    border-radius: 100%;
+    display: flex;
+}
+#black{
+    background-color: #00000069;
+}
+
+.rix{
+    position: relative;
+}
+.rix::before{
+    position: absolute;
+    content: '';
+    background-color: #dd1920;
+    height: 58px;
+    width: 6px;
+    border-radius: 50px;
+    left: 16px;
+
+}

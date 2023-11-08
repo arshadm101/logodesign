@@ -12,6 +12,8 @@ import Portfolio from "../new-lp/component/portfolio/portfolio";
 import Happy from "../new-lp/component/happy/happy";
 import Pricing from "../new-lp/component/pricing/pricing";
 import Logocombo from "../new-lp/component/logocombo/logocombo";
+import Modal from "./component/modal/modal";
+
 
 const Page = () => {
 

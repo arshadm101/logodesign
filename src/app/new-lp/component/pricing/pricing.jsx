@@ -10,6 +10,9 @@ import logo4 from 'media/new-lp/pricing/pec4.webp'
 import tick from 'media/new-lp/pricing/tick.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import { useState } from "react";
+import Modal from "../modal/modal";
+
 
 const Pricing = () => {
 
@@ -23,6 +26,13 @@ const Pricing = () => {
         slidesToScroll: 1,
     };
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
 
 
 
@@ -61,7 +71,7 @@ const Pricing = () => {
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]">$117.00</sub></h5>
                                 </div>
 
-                                <Link class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
+                                <Link onClick={openModal} class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
                             </div>
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo2} />
@@ -87,7 +97,7 @@ const Pricing = () => {
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]">$307.00</sub></h5>
                                 </div>
 
-                                <Link class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
+                                <Link onClick={openModal} class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
                             </div>
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo3} />
@@ -113,7 +123,7 @@ const Pricing = () => {
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]">$849.00</sub></h5>
                                 </div>
 
-                                <Link class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
+                                <Link onClick={openModal} class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
                             </div>
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo4} />
@@ -140,13 +150,15 @@ const Pricing = () => {
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]"> $1996.00</sub></h5>
                                 </div>
 
-                                <Link class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
+                                <Link onClick={openModal} class="bg-[#dd1920] text-[#fff] py-3 px-9 md:rounded-full text-[16px] font-[400] block text-center" href="#">Order Now</Link>
                             </div>
                         </Slider>
                     </div>
 
                 </div>
             </section>
+
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
         </>
     )
 }
