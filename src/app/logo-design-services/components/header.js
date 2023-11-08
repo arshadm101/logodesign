@@ -41,12 +41,12 @@ const Header = () => {
     const navList = (
         <ul className="font-roboto sm:block md:block lg:hidden  xl:hidden lg:items-center gap-6 lg:h-full rounded-2xl bg-black lg:bg-transparent lg:rounded-none py-5 lg:py-0 px-5 lg:px-0">
                       
-                      <Link href='javascript:$zopim.livechat.window.show();' className="flex items-center gap-x-2 sm:w-[150px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
+                      <Link href='javascript:$zopim.livechat.window.show();' className="flex items-center mx-auto gap-x-2 sm:w-[150px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
                    <Image src="/logodesignnew/chat.svg" alt="Messgae" width={20} height={21} />
                     <span className="text-sm xl:text-lg font-medium"> Live Chat</span>
                   
             </Link>
-                    <Link href='tel:8556666675' className="flex items-center gap-x-2 sm:w-[290px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
+                    <Link href='tel:8556666675' className="flex items-center gap-x-2 sm:w-[290px] mx-auto justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
                     <Image src="/logodesignnew/call.png" alt="call"  width={20} height={21} />
                         <span className="text-sm xl:text-lg font-medium"> Call Us: (855) 251-3020</span>
                     
@@ -77,7 +77,7 @@ const Header = () => {
                 <span className="w-[1px] h-auto bg-white text-transparent">|</span>
                     <Link href='tel:8556666675' className="flex items-center gap-x-2 sm:w-[270px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all pr-6" >
                     <Image src="/logodesignnew/call.png" alt="call"  width={20} height={21} />
-                        <span className="text-sm xl:text-lg font-medium "> Call Us: (855) 251-3020</span>
+                        <span className="text-sm xl:text-lg font-medium "> Call Us: (855) 666-6675</span>
                     
                     </Link>
                     <button  type="button" onClick={openModal} className="bg-[#f73600] hover:bg-[#fdc400] duration-300 ease-in-out flex items-center gap-3 sm:w-[150px] justify-center h-[45px] text-[13px] rounded-full transition-all" >

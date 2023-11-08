@@ -167,7 +167,7 @@ const Hero = ({ content }) => {
                    
                     <div className="basis-[100%] md:basis-[60%] lg:basis-[60%] xl:basis-[60%] relative">
                         <div className="grid grid-rows-1 grid-flow-col gap-4 justify-center md:justify-end lg:justify-end xl:justify-end">
-                            <div class="absolute top-[1px] -left-24 before:content-[''] before:absolute hidden md:block xl:block lg:block">
+                            <div class="absolute top-[1px] -left-24  before:content-[''] before:absolute hidden xl:block lg:block">
                                 <Image src={beforeImg} alt="form" className="" />
                             </div>
                             <div className="relative w-[350px] custom-shadow rounded-3xl">

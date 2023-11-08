@@ -119,11 +119,11 @@ const Modal = ({ isOpen, onClose }) => {
     <div className={modalClasses}>
       <div className=" p-6 rounded-lg">
         
-      <div className="relative w-[450px] custom-shadow rounded-3xl">
+      <div className="relative w-[350px] xl:w-[450px] lg:w-[450px] md:w-[450px] custom-shadow rounded-3xl">
       <button onClick={onClose} className="font-poppins px-4 mt-3 bg-[#23bbc8] text-[#fff] rounded-full w-[37px] h-[37px] absolute right-[10px] top-30px hover:bg-gray-400" > x </button>
                                 <div
                                     className="bg-[#f73600] bg-red-700 rounded-t-3xl text-center font-bold shadow-md">
-                                    <h2 class=" text-white text-[30px] py-2 font-poppins text-shadow">UP TO 70% DISCOUNT
+                                    <h2 class=" text-white text-[24px] py-2 font-poppins text-shadow xl:text-[30px] lg:text-[30px] md: :text-[30px]">UP TO 70% DISCOUNT
 </h2>
                                 </div>
                                 <div class="font-poppins relative bg-red-700 rounded-t-3xl text-center font-semibold shadow-md ">
@@ -131,8 +131,8 @@ const Modal = ({ isOpen, onClose }) => {
                                     <div
                                         class="bg-[#fff] uppercase text-bold leading-7 pt-[9px] pb-[9px] text-black text-[25px] relative">
                                         <h3>
-                                       <span className='text-[#f73600]'>70% OFF</span> TILL MIDNIGHT<br/>
-                                            <span className="text-[12px] font-[400]">Fill out this brief form to get your <span className='font-[700]'> DISCOUNT RESERVED.</span>
+                                       <span className='text-[#f73600]'>70% OFF</span> TILL MIDNIGHT
+                                        <span className="text-[12px] font-[400] block">Fill out this brief form to get your <span className='font-[700]'> DISCOUNT RESERVED.</span>
 
 </span><br />
                                            
