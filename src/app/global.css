@@ -335,7 +335,45 @@ body {
     border: inherit;
 }
 
-.slick-track {
+
+
+/* arshad css */
+
+.custom-shadow{
+    box-shadow:-20px 0 46px 0 rgba(0, 0, 0, .8);
+}
+.customgap .slick-slide {
+    margin: 8px
+}
+.cusmslide .slick-slide {
+    margin: 15px
+}
+.testimonials .slick-slide {
+    margin: 20px
+}
+.combolist li{
+    border-bottom: 1px dashed rgb(255 255 255 / 15%);
+    padding: 10px 0px;
+    margin-right: 35px;
+    display: block;
     align-items: center;
-    display: flex !important;
+    font-size: 14px;
+}
+.bg_gr{
+    /* background: -moz-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%); */
+    background: -webkit-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%);
+    /* background: -ms-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%); */
+}
+.modelbg{
+   box-shadow: 10px 10px 10px 10px #262626;
+}
+
+
+.bgx::-webkit-scrollbar-track {
+    background: #909090;
+}
+
+/* Handle */
+.bgx::-webkit-scrollbar-thumb {
+    background: #23bbc8;
 }
