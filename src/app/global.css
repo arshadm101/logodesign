@@ -142,6 +142,50 @@ body {
     min-height: 300px;
 } */
 
+
+.newtown .slick-track {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+.newtown ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .newtown  ::-webkit-scrollbar-track {
+    background: unset; 
+  }
+   
+  /* Handle */
+  .newtown  ::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 50px;
+    opacity: 0.4;
+  }
+  
+  /* Handle on hover */
+  .newtown  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+ .newarrr img.slick-arrow.slick-prev {
+    right: 9%;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+} 
+.newarrr img.slick-arrow.slick-next {
+    left: 9%;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+} 
+
+
 .__reviewsCmp ul.slick-dots {
     bottom: 10px;
     width: max-content;
@@ -173,6 +217,7 @@ body {
     display: none;
 }
 
+
 .__reviewsCmp ul.slick-dots li.slick-active {
     background-color: #0F2847;
 }
@@ -188,6 +233,29 @@ body {
     height: 2px;
     margin-left: 16px;
 }
+
+
+/* .newtown ul.slick-dots li button::before,
+.newtown ul.slick-dots li button::after {
+    display: none;
+}
+
+.newtown ul.slick-dots li.slick-active {
+    background-color: #0F2847;
+}
+
+.newtown ul.slick-dots li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    display: block;
+    background-color: #707070;
+    width: 380px;
+    height: 2px;
+    margin-left: 16px;
+} */
+
 
 @media (max-width: 1299px) {
     .__reviewsCmp ul.slick-dots::after {
@@ -220,15 +288,6 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #CA4140;
-}
-
-.bgx::-webkit-scrollbar-track {
-    background: #909090;
-}
-
-/* Handle */
-.bgx::-webkit-scrollbar-thumb {
-    background: #23bbc8;
 }
 
 .__awardsSlider .slick-track {
@@ -279,36 +338,4 @@ body {
 .slick-track {
     align-items: center;
     display: flex !important;
-}
-
-.custom-shadow{
-    box-shadow:-20px 0 46px 0 rgba(0, 0, 0, .8);
-}
-.customgap .slick-slide {
-    margin: 8px
-}
-.cusmslide .slick-slide {
-    margin: 15px
-}
-.testimonials .slick-slide {
-    margin: 20px
-}
-.combolist li{
-    border-bottom: 1px dashed rgb(255 255 255 / 15%);
-    padding: 10px 0px;
-    margin-right: 35px;
-    display: block;
-    align-items: center;
-    font-size: 14px;
-}
-
-.bg_gr{
-    /* background: -moz-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%); */
-    background: -webkit-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%);
-    /* background: -ms-linear-gradient( 90deg, rgb(236,28,36) 0%, rgb(255,118,17) 100%); */
-}
-
-.modelbg{
-   box-shadow: 10px 10px 10px 10px #262626;
-   
 }
