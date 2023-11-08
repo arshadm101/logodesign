@@ -215,7 +215,7 @@ const Pricing = ({content}) => {
                                             <del className="text-[40px] font-semibold border-red-500">$2663</del>
                                         </h3>
                                         <h1 class="font-semibold text-[2em]">$799</h1>
-                                        <button onClick={openModal} type="button" class="bg-[#fdc400] hover:bg-[#f73600] duration-300 ease-in-out  flex items-center mx-auto gap-3 sm:w-[150px] justify-center h-[45px] text-[13px]  rounded-full transition-all"><span class="text-[14px] font-medium"> Order Now</span></button>
+                                        <button onClick={openModal} type="button" class="bg-[#fdc400] hover:bg-[#f73600] duration-300 ease-in-out  flex items-center mx-auto gap-3 justify-center h-[45px] text-[13px]  rounded-full transition-all w-[250px] xl:w-[160px] lg:w-[160px] md:w-[160px]"><span class="text-[14px] font-medium "> Order Now</span></button>
                                         <div className="mx-auto hidden text-center items-center justify-center mt-5 xl:flex lg:flex">
                                             <Image src="/logodesignnew/awards.webp" alt="awards" width={257} height={470} className="h-[auto] w-[257px]" />
                                             </div>
@@ -265,7 +265,7 @@ const Pricing = ({content}) => {
                                             <del className="text-[40px] font-semibold ">$3330</del>
                                         </h3>
                                         <h1 class="font-semibold text-[2em]">$999</h1>
-                                        <button onClick={openModal} type="button" class="bg-[#fdc400] hover:bg-[#f73600] duration-300 ease-in-out flex items-center mx-auto gap-3 sm:w-[150px] justify-center h-[45px] text-[13px]  rounded-full transition-all"><span class="text-[14px] font-medium"> Order Now</span></button>
+                                        <button onClick={openModal} type="button" class="bg-[#fdc400] hover:bg-[#f73600] duration-300 ease-in-out flex items-center mx-auto gap-3 w-[150px] xl:[160px] lg:w-[160px] md:w-[160px] justify-center h-[45px] text-[13px]  rounded-full transition-all"><span class="text-[14px] font-medium"> Order Now</span></button>
                                         <div className="mx-auto hidden text-center items-center justify-center mt-5 xl:flex lg:flex">
                                             <Image src="/logodesignnew/awards.webp" alt="awards" width={257} height={470} className="h-[auto] w-[257px]" />
                                             </div>
