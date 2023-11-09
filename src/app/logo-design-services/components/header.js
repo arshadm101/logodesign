@@ -65,10 +65,10 @@ const Header = () => {
                         <Link href="/">
                             <Image src={logow} alt="logo" />
                         </Link>
-                        <div className="hidden lg:flex ml-auto xl:m-auto h-full items-center">
+                        <div className="hidden lg:flex xl:flex ml-auto xl:m-auto h-full items-center">
                             {navList}
                         </div>
-                        <div className="hidden xl:flex items-center gap-0 text-white">
+                        <div className="hidden lg:flex xl:flex items-center gap-0 text-white">
                             <Link href='javascript:$zopim.livechat.window.show();' className="flex items-center gap-x-2 sm:w-[140px] justify-center h-[45px] text-[18px] font-medium rounded-full transition-all" >
                    <Image src="/logodesignnew/chat.svg" alt="Messgae" width={20} height={21} />
                     <span className="text-sm xl:text-lg font-medium "> Live Chat</span>
