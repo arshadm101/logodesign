@@ -25,3 +25,13 @@
     z-index: -1;
     background-size: 100%;
 }
+
+
+@media screen and (max-width: 767px) {
+   
+
+    .longa:before {
+        display: none;
+    }
+    
+}

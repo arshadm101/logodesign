@@ -75,3 +75,13 @@ overflow: hidden;
     transform: rotate(-9deg);
     z-index: 2;
 }
+
+
+@media screen and (max-width: 767px) { 
+
+    .longa:before {
+      display: none;
+    }
+
+
+}

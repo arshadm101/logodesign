@@ -40,3 +40,25 @@
     left: 0;
     top: 42px;
 }
+
+
+@media screen and (max-width: 1200px) {
+   
+
+    .ban::before {
+        display: none;
+    }
+    .designing::before {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+   
+    .designing{
+       margin-top: 0;
+        
+    
+    }
+    
+}

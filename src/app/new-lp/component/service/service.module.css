@@ -79,3 +79,45 @@
     }
  
 }
+
+
+@media screen and (max-width: 991px) {
+   
+
+    .fristhove2{
+    
+        margin-top: 1.2rem;
+       
+    }
+    
+    
+}
+@media screen and (max-width: 767px) {
+
+    .fristhove{
+        margin-bottom: 30px;
+        translate: unset;
+    }
+
+    .fristhove2{
+        translate: unset;
+        margin-bottom: 1.2rem;
+       
+    }
+    .fristhove1{
+        translate: unset;
+
+       
+    }
+
+    .pst:before{
+        display: none;
+    }
+   
+
+    .longa:before{
+        display: none;
+    }
+    
+    
+}

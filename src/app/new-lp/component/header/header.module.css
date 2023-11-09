@@ -2,3 +2,13 @@
     position: relative;
     z-index: 1;
 }
+
+
+@media screen and (max-width: 767px) {
+   
+
+    .post{
+       padding-top: 1%;
+    }
+    
+}
