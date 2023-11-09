@@ -106,11 +106,11 @@ const Pricing = ({content}) => {
             <section className="font-poppins" style={sectionStyle3}>
                 <div className="py-[40px] md:py-[40px]">
                    
-                        <div className="text-center mb-10">
+                        <div className="text-center mb-8">
                             <div className="text-center">
-                                <div className="container md:max-w-6xl lg:max-w-6xl 2xl:max-w-7xl mb-5">
+                                <div className="container md:max-w-6xl lg:max-w-6xl 2xl:max-w-7xl mb-3">
                                     <div className="grid grid-cols-1 items-center gap-x-3">
-                                        <h2 className="text-[30px] text-center pt-10 text-[#fff] font-[700] mb-3">Logo Pricing Simplified</h2>
+                                        <h2 className="text-[30px] text-center pt-10 text-[#fff] font-[700] mb-2">Logo Pricing Simplified</h2>
                                             <p className="text-[16px] text-[#fff] ">The Creative Logo Design has proudly catered unique logo design solutions with affordable packages <br/> to meet your business requirements.</p>
 
                                     </div>
@@ -118,9 +118,9 @@ const Pricing = ({content}) => {
                             </div>
                     </div>
                 </div>
-                <div className="pb-10 md:pb-20">
+                <div className="pb-8 md:pb-20">
                     <div className="container max-w-6xl 2xl:max-w-7xl">
-                     <div className="customgap grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-4  gap-4 gap-y-4 text-[#060f32]">
+                     <div className="customgap grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-4 gap-4 gap-y-4 text-[#060f32]">
                      <Slider {...settings}> {packageData.packages.map((e, i) => {
                                 return <div key={i} className="bg-[#fff] transition duration-0 ease-in-out hover:bg-[#060f32] hover:text-[#fff] rounded-xl px-3 border-2 border-[#f3f3f3]">
                                     <div className="text-center pt-3 pb-1 mt-5 font-semibold">
