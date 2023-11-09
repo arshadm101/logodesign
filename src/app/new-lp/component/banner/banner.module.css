@@ -4,15 +4,15 @@
     position: relative;
 }
 
-/* .banner::before{
-    content: "";
-    position: absolute;
-    background-image: url(../../../../../public/new-lp/service/tabs-bg.webp);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 112px;
-    height: 159px;
-    right: 0;
-    bottom: 22px;
-} */
+
+@media screen and (max-width: 767px) {
+   
+
+    .banner {
+        background:unset;
+        background-color: #ebebeb;
+        margin-top: -157px;
+        position: relative;
+    }
+    
+}

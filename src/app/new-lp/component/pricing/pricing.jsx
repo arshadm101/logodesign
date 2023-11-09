@@ -31,6 +31,37 @@ const Pricing = () => {
             </div>
           );
         },
+        responsive: [
+
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
       };
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,11 +76,11 @@ const Pricing = () => {
 
     return (
         <>
-            <section className={`${styles.pricing}  font-poppins py-[80px]`}>
+            <section className={`${styles.pricing}  font-poppins lg:py-[80px] md:py-[80px] sm:py-[50px] py-[50px]`}>
                 <div class="container mx-auto">
                     <div class="grid grid-cols-1">
                         <div className={`${styles.longa}`}>
-                            <h2 className="text-[66px] font-[700] text-center mb-10 text-[#00142d]">Our Pricing</h2>
+                            <h2 className="lg:text-[66px] md:text-[35px] sm:text-[35px] text-[23px] font-[700] text-center lg:mb-10 md:mb-10 sm:mb-10 mb-2 text-[#00142d]">Our Pricing</h2>
                         </div>
                     </div>
                     <div class="grid grid-cols-1">
@@ -58,7 +89,7 @@ const Pricing = () => {
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo1} />
 
-                                <h3 className="text-[32px] font-[700] text-[#00142d] mb-5">Logo Basic</h3>
+                                <h3 className="lg:text-[32px] md:text-[32px] sm:text-[32px] text-[23px] font-[700] text-[#00142d] mb-5">Logo Basic</h3>
                                 <ul className={styles.flip}>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> 4 Original Logo Concepts</li>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> 2 Dedicated Logo Designer</li>
@@ -74,7 +105,7 @@ const Pricing = () => {
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> Dedicated Account Manager</li>
                                 </ul>
                                 <div className={` ${styles.pri} flex items-center place-content-between mb-4`}>
-                                    <h4 className="text-[42px] font-[700] text-[#00142d] mt-5">$35.00</h4>
+                                    <h4 className="lg:text-[42px] md:text-[42px] sm:text-[30px] text-[23px] font-[700] text-[#00142d] mt-5">$35.00</h4>
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]">$117.00</sub></h5>
                                 </div>
 
@@ -82,7 +113,7 @@ const Pricing = () => {
                             </div>
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo2} />
-                                <h3 className="text-[32px] font-[700] text-[#00142d] mb-5">Logo Professional</h3>
+                                <h3 className="lg:text-[32px] md:text-[32px] sm:text-[32px] text-[23px] font-[700] text-[#00142d] mb-5">Logo Professional</h3>
                                 <ul className={styles.flip}>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> 12 Original Logo Concepts</li>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> 4 Dedicated Logo Designer (Industry Specific)</li>
@@ -100,7 +131,7 @@ const Pricing = () => {
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> Dedicated Account Manager</li>
                                 </ul>
                                 <div className={` ${styles.pri} flex items-center place-content-between mb-4`}>
-                                    <h4 className="text-[42px] font-[700] text-[#00142d] mt-5">$119.00</h4>
+                                    <h4 className="lg:text-[42px] md:text-[42px] sm:text-[30px] text-[23px] font-[700] text-[#00142d] mt-5">$119.00</h4>
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]">$307.00</sub></h5>
                                 </div>
 
@@ -108,7 +139,7 @@ const Pricing = () => {
                             </div>
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo3} />
-                                <h3 className="text-[32px] font-[700] text-[#00142d] mb-5">Logo Elite</h3>
+                                <h3 className="lg:text-[32px] md:text-[32px] sm:text-[32px] text-[23px] font-[700] text-[#00142d] mb-5">Logo Elite</h3>
                                 <ul className={styles.flip}>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> Unlimited Original Logo Concepts</li>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> 8 Dedicated Logo Designer (Industry Specific)</li>
@@ -126,7 +157,7 @@ const Pricing = () => {
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> Dedicated Account Manager</li>
                                 </ul>
                                 <div className={` ${styles.pri} flex items-center place-content-between mb-4`}>
-                                    <h4 className="text-[42px] font-[700] text-[#00142d] mt-5">$299.00</h4>
+                                    <h4 className="lg:text-[42px] md:text-[42px] sm:text-[30px] text-[23px] font-[700] text-[#00142d] mt-5">$299.00</h4>
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]">$849.00</sub></h5>
                                 </div>
 
@@ -134,7 +165,7 @@ const Pricing = () => {
                             </div>
                             <div className={`${styles.newflix} bg-[#fdf4f5] rounded-3xl py-10 px-7`}>
                                 <Image src={logo4} />
-                                <h3 className="text-[32px] font-[700] text-[#00142d] mb-5">The Boss</h3>
+                                <h3 className="lg:text-[32px] md:text-[32px] sm:text-[32px] text-[23px] font-[700] text-[#00142d] mb-5">The Boss</h3>
                                 <ul className={styles.flip}>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> 3D/Mascot/Animated Logo</li>
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> Unlimited Original Logo Concepts</li>
@@ -153,7 +184,7 @@ const Pricing = () => {
                                     <li className="text-[16px] font-[400] text-[#49658a] mb-[1rem] flex items-center gap-3"> <Image src={tick} className="w-[17px]" /> Dedicated Account Manager</li>
                                 </ul>
                                 <div className={` ${styles.pri} flex items-center place-content-between mb-4`}>
-                                    <h4 className="text-[42px] font-[700] text-[#00142d] mt-5">$599.00</h4>
+                                    <h4 className="lg:text-[42px] md:text-[42px] sm:text-[30px] text-[23px] font-[700] text-[#00142d] mt-5">$599.00</h4>
                                     <h5 className="text-[20px] font-[600] text-[#c4c4c4]">Was <br></br> <sub className="text-[16px] font-[600]"> $1996.00</sub></h5>
                                 </div>
 

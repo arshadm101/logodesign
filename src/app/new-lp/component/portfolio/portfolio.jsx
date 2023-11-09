@@ -25,7 +25,7 @@ const Portfolio = () => {
                 <div class="container mx-auto">
                     <div class="grid grid-cols-1">
                     <div className={`${styles.longa}`}>
-                        <h2 className="text-[66px] font-[700] text-center mb-10 text-[#00142d]">Our Portfolio</h2>
+                        <h2 className="lg:text-[66px] md:text-[35px] sm:text-[35px] text-[23px]   font-[700] text-center mb-10 text-[#00142d]">Our Portfolio</h2>
                         </div>
                     </div>
 

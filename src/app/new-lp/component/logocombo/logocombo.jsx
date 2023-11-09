@@ -46,11 +46,11 @@ const Logocombo = () => {
                     <div class="grid grid-cols-1">
                         <Slider {...settings} className="newtown">
                             <div>
-                                <div class="grid grid-cols-2">
+                                <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
                                     <div>
-                                        <h2 className="text-[30px] font-[700] text-[#ffff] capitalize">Logo Infinite</h2>
+                                        <h2 className="lg:text-[30px] md:text-[30px] sm:text-[30px] text-[23px] font-[700] text-[#ffff] capitalize">Logo Infinite</h2>
                                         <h4 className="text-[20px] font-[600] text-[#ffff] mt-4 mb-5">Crafting your brand to completion!</h4>
-                                        <div className="flex gap-5">
+                                        <div className="flex lg:gap-5 md:gap-5 lg:flex-row md:flex-row sm:flex-col flex-col sm:gap-0 gap-0">
                                             <ul class="">
                                                 <li className="text-[13px] font-[400] text-[#ffff] py-[4px] border-b border-[#6e6e6ede]"> Unlimited Original Logo Concepts</li>
                                                 <li className="text-[13px] font-[400] text-[#ffff] py-[4px] border-b border-[#6e6e6ede]"> 8 Dedicated Logo Designer (Industry Specific)</li>
@@ -88,12 +88,12 @@ const Logocombo = () => {
                                 </div>
                             </div>
                             <div>
-                                <div class="grid grid-cols-2">
+                                <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
                                     <div>
-                                        <h2 className="text-[30px] font-[700] text-[#ffff] capitalize">Logo Combo</h2>
+                                        <h2 className="lg:text-[30px] md:text-[30px] sm:text-[30px] text-[23px] font-[700] text-[#ffff] capitalize">Logo Combo</h2>
                                         <h4 className="text-[20px] font-[600] text-[#ffff] mt-4 mb-5">Crafting your brand to completion!
                                         </h4>
-                                        <div className="flex gap-5">
+                                        <div className="flex lg:gap-5 md:gap-5 lg:flex-row md:flex-row sm:flex-col flex-col sm:gap-0 gap-0">
                                             <ul class="">
 
                                                 <li className="text-[13px] font-[400] text-[#ffff] py-[4px] border-b border-[#6e6e6ede]">Unlimited Original Logo Concepts </li>
