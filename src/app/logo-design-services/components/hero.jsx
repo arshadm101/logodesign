@@ -139,12 +139,12 @@ const Hero = ({ content }) => {
     return (
     <section style={sectionStyle} className="font-poppins text-white pb-12">
         <div className="pt-[120px]">
-            <div className="container md:max-w-6xl lg:max-w-6xl xl:max-w-8xl">
+            <div className="container md:max-w-6xl lg:max-w-6xl xl:max-w-6xl 2xl:max-w-7xl">
                     
                 <div className="block pt-5 gap-x-5 md:flex lg:flex xl:flex mx-auto text-center md:text-left xl:text-left lg:text-left ">
                    
                     <div className="basis-[100%] sm:basis-[100%] md:basis-[40%] lg:basis-[40%] xl:basis-[40%]">
-                        <Timer className="mt-10 justify-center xl:justify-left lg:justify-left md:justify-left"></Timer>
+                        <Timer  className="mt-10 justify-center xl:justify-left lg:justify-left md:justify-left"></Timer>
                      
                         <h4 className="text-[22px] leading-8 font-samibold pt-3  md:text-[30px] lg:text-[30px] xl:text-[30px]">Activate Your Coupon <br /> Now</h4>
                         <div className="block mx-auto justify-center items-center md:flex lg:flex xl:flex md:justify-start lg:justify-start xl:justify-start">
@@ -167,33 +167,33 @@ const Hero = ({ content }) => {
                    
                     <div className="basis-[100%] md:basis-[60%] lg:basis-[60%] xl:basis-[60%] relative">
                         <div className="grid grid-rows-1 grid-flow-col gap-4 justify-center md:justify-end lg:justify-end xl:justify-end">
-                            <div class="absolute top-[1px] -left-24  before:content-[''] before:absolute hidden xl:block lg:block">
+                            <div className="absolute top-[1px] -left-24  before:content-[''] before:absolute hidden xl:block lg:block">
                                 <Image src={beforeImg} alt="form" className="" />
                             </div>
                             <div className="relative w-[350px] custom-shadow rounded-3xl">
                                 <div
                                     className="border-solid border-white border-t-2 border-r-2 border-l-2 border-bottom-0 bg-[#f73600] bg-red-700 rounded-t-3xl text-center font-bold shadow-md">
-                                    <h2 class=" text-white text-[40px] py-2">70% DISCOUNT</h2>
+                                    <h2 className=" text-white text-[40px] py-2">70% DISCOUNT</h2>
                                 </div>
-                                <div class="relative bg-red-700 rounded-t-3xl text-center font-semibold shadow-md ">
+                                <div className="relative bg-red-700 rounded-t-3xl text-center font-semibold shadow-md ">
                                     <div
-                                        class="absolute -left-[15px] -top-[16px] inset-0 before:content-[''] before:absolute ">
+                                        className="absolute -left-[15px] -top-[16px] inset-0 before:content-[''] before:absolute ">
                                         <Image src={formbefore} width={16} height={88} alt="form" className="" />
                                     </div>
                                     <div
-                                        class="bg-[#23bbc8] uppercase text-bold leading-7 pt-[9px] pb-[9px] text-white text-[25px] relative">
+                                        className="bg-[#23bbc8] uppercase text-bold leading-7 pt-[9px] pb-[9px] text-white text-[25px] relative">
                                         <h3>
                                             <span className="text-[16px]">Let’s start your project,</span><br />
                                             Drop us your details!
                                         </h3>
                                     </div>
-                                    <div class="absolute -right-[15px] -top-[16px] after:content-[''] before:absolute ">
+                                    <div className="absolute -right-[15px] -top-[16px] after:content-[''] before:absolute ">
                                         <Image src={formafter} width={16} height={88} alt="form" className="" />
                                     </div>
                                 </div>
                                 <div className="bg-blue-gray-50 pb-5 pt-4 px-3 rounded-b-3xl ">
                                     <form  className="" method="POST" autoComplete="off">
-                                        <div class="w-full">
+                                        <div className="w-full">
                                             <input  onChange={handleDataChange} type="text" placeholder="Enter Your Name" name="name" 
                                                 className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-gray-800 font-roboto" required/>
                                          {
@@ -202,7 +202,7 @@ const Hero = ({ content }) => {
                                 </span>
                             }
                                         </div>
-                                        <div class="w-full">
+                                        <div className="w-full">
                                             <input onChange={handleDataChange} type="email" placeholder="Enter Your Email" name="email"   className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-blue-300 font-roboto" required/>
                                             {
                                 errors.email && <span className="text-[12px] block p-2 font-medium text-red">
@@ -210,7 +210,7 @@ const Hero = ({ content }) => {
                                 </span>
                             }
                                         </div>
-                                        <div class="w-full">
+                                        <div className="w-full">
                                             <input  onChange={handleDataChange} type="number" placeholder="Enter Your Phone" name="phone"  className="placeholder:text-[#6e6e6e] placeholder:pl-[10px] w-full px-4 py-3 my-3 border border-gray-400 rounded-3xl focus:outline-none text-[#000] focus:ring focus:border-blue-300 font-roboto" required/>
                                             {
                                 errors.phone && <span className="text-[12px] block p-2 font-medium text-red">
@@ -218,7 +218,7 @@ const Hero = ({ content }) => {
                                 </span>
                             }
                                         </div>
-                                        <div class="w-full">
+                                        <div className="w-full">
                                             <button onClick={handleFormSubmit} className="bg_gr text-[18px] text-white font-semibold text-lg py-4 rounded-full uppercase w-full" id="signupBtn" type="submit" value={formStatus} disabled={isDisabled}>   Submit your Request
                                             </button>
                                         </div>

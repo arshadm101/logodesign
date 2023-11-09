@@ -15,7 +15,7 @@ import Footer from "./components/footer";
 import Script from "next/script";
 
 
-const Page = ({content}) => {
+const Page = ({content, props}) => {
     // Array for Hero Component Props
     const hero = {
         page: "logoDesign",
@@ -120,29 +120,24 @@ const Page = ({content}) => {
         name: "logo-design"
     }
     // Array for Letstalk Component Props
-    const letstalk = {
-        title: "Design Consultation",
-        desc: "Contact us for a free consultation, and let's design your captivating logo, website, and mobile app together!"
-    }
+    
+    
     // Array for Reviews Component Props
     const reviews = [
         {
-            message: "Creative Logo Designs created a special and eye-catching custom logo design that perfectly shows what our financial consulting firm is about. Our team and clients love it, thanks to their amazing logo design skills.",
-            name: "Jennifer Mitchell",
-            jd: "Senior Financial Advisor",
-            profile: "/logo-design/reviews/1.png"
+            message: "The team at The Creative Logo Design is really marvelous, they have helped me improve my online business and my only contribution was to contact them. Thanks to The Creative Logo Design Team and Good Luck for future.",
+            name: "Sarah Parker",
+            profile: "/logodesignnew/client1.webp"
         },
         {
-            message: "Their UI/UX web design service has significantly improved the visual appeal and functionality of our ecommerce website across devices. The user engagement on our website has increased a lot as well. Creative Logo Designs is the best web design company I have ever worked with.",
-            name: "Sarah Johnson",
-            jd: "E-commerce Manager",
-            profile: "/logo-design/reviews/2.png"
+            message: "I’m impressed by The Creative Logo Design Design service and the designs they delivered to me. As it was my first experience with them, I did not know about their service at that time but now I recommend them to everyone.",
+            name: "Mark Andrews",
+            profile: "/logodesignnew/client2.webp"
         },
         {
-            message: "Hiring Creative Logo Designs for our tech startup web design and development has been one of the best decisions. It's not just about aesthetics; the functionality and user experience they delivered are nothing short of exceptional.",
-            name: "Emily Parker",
-            jd: "Co-founder",
-            profile: "/logo-design/reviews/3.png"
+            message: "Most amazing company ever, very quick with my design, always happy to help and all round kind people. I for sure will always uses these guys, I will recommend them to everyone. thank you for everything The Creative Logo Design Design.",
+            name: "Julia Schmidt",
+            profile: "/logodesignnew/client3.webp"
         },
 
     ]
@@ -155,7 +150,7 @@ const Page = ({content}) => {
                 <Folio content={portfolio} />
                 <Pricing content={packages}></Pricing>
                 <Offer></Offer>
-                <Testimonials></Testimonials>
+                <Testimonials reviews={reviews}></Testimonials>
                 <Footer />
                 <Script id="general-schema" type="application/ld+json">
                     {`

@@ -131,7 +131,7 @@ const Footer = () => {
     return (
         <footer className="font-poppins">
             <div className="bg-[#060f32] text-white pt-10 pb-5">
-                <div className="container max-w-6xl">
+                <div className="container max-w-6xl 2xl:max-w-7xl">
                     <div className="grid grid-flow-row lg:grid-cols-3 xl:grid-cols-3 items-center gap-x-3 mb-7 pb-4 border-[#aeaeae] border-b-[2px] border-solid grid-cols-1 text-center justify-center">
                         <div className="text-[14px] font-semibold px-8">
                            <Link href="/terms-and-conditions/" className="px-2 hover:text-[#f73600]">Terms & Conditions</Link> <span className="h-[50px] w-1 border-solid border-l-2 border-[#fff]"></span> <Link href="/privacy-policy/"  className="px-3 hover:text-[#f73600]">Privacy Policy</Link>
@@ -146,7 +146,7 @@ const Footer = () => {
                     <div className="text-center border-top-2">
                         <h4 className="font-semibold text-[18px] pb-3 text-[#f73600]">Disclaimer:
 </h4>
-                        <p className="text-[11px] font-roboto">The logo, name and graphics of The Design Verse and its products & services are the trademarks of The Design Verse. All other company names, brand names, trademarks and logos mentioned on this website are the property of their respective owners and do not constitute or imply endorsement, sponsorship or recommendation thereof by The Design Verse vand do not constitute or imply endorsement, sponsorship or recommendation of The Design Verse by the respective trademark owner.
+                        <p className="text-[11px] font-roboto">The logo, name and graphics of The Creative Logo Design and its products & services are the trademarks of The Creative Logo Design. All other company names, brand names, trademarks and logos mentioned on this website are the property of their respective owners and do not constitute or imply endorsement, sponsorship or recommendation thereof by The Creative Logo Design vand do not constitute or imply endorsement, sponsorship or recommendation of The Creative Logo Design by the respective trademark owner.
 
 </p>
                     </div>

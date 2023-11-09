@@ -21,7 +21,7 @@ const Folio = ({ content }) => {
 
         <section className="font-poppins" style={sectionStyle2}>
             <div className="py-[40px] md:py-[40px]">
-                <div className="container max-w-6xl">
+                <div className="container max-w-6xl 2xl:max-w-7xl">
                     <div className="text-center mb-10">
                         <div className="text-center">
                             <div className="container md:max-w-6xl lg:max-w-6xl mb-5">
@@ -50,7 +50,7 @@ const Folio = ({ content }) => {
                         <TabsBody>
                             {tabs.map(({ value, images }) => (
                                 <TabPanel key={value} value={value} className="p-0">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-3">
+                                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-3 gap-y-3">
                                         {images.map((e, i) => {
                                             return <div key={i}>
                                                 <Image src={e} alt={i} width={800} height={300} className="block m-auto" />
