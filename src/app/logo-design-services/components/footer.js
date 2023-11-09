@@ -131,7 +131,7 @@ const Footer = () => {
     return (
         <footer className="font-poppins">
             <div className="bg-[#060f32] text-white pt-10 pb-5">
-                <div className="container max-w-6xl">
+                <div className="container max-w-6xl 2xl:max-w-7xl">
                     <div className="grid grid-flow-row lg:grid-cols-3 xl:grid-cols-3 items-center gap-x-3 mb-7 pb-4 border-[#aeaeae] border-b-[2px] border-solid grid-cols-1 text-center justify-center">
                         <div className="text-[14px] font-semibold px-8">
                            <Link href="/terms-and-conditions/" className="px-2 hover:text-[#f73600]">Terms & Conditions</Link> <span className="h-[50px] w-1 border-solid border-l-2 border-[#fff]"></span> <Link href="/privacy-policy/"  className="px-3 hover:text-[#f73600]">Privacy Policy</Link>

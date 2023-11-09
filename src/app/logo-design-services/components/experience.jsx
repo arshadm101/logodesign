@@ -76,7 +76,7 @@ const Expe = () => {
     return (
      <section className="font-poppins bg-[#f73600] text-white">
         <div className="">
-            <div className="container md:max-w-6xl lg:max-w-6xl">
+            <div className="container md:max-w-6xl lg:max-w-6xl 2xl:max-w-7xl">
           
                 <div className="grid grid-flow-row grid-cols-1  items-center gap-x-3 h-[115px] ">
                 <Slider {...sliderSettings}> 

@@ -85,7 +85,7 @@ const Offer = () => {
         <>
           <section className="font-poppins">
             <div className="">
-                <div className="container md:max-w-6xl lg:max-w-6xl">
+                <div className="container md:max-w-6xl lg:max-w-6xl 2xl:max-w-7xl">
                     <div className="grid grid-flow-row grid-cols-1 items-center py-16 pb-0">
                         <div className="border-[#f73600] border-l-[13px] border-solid">
                            <div className="px-4">
@@ -100,7 +100,7 @@ const Offer = () => {
         </section>
         <section className="font-poppins py-5 cusmslide">
             <div className=" py-5">
-                <div className="container md:max-w-6xl lg:max-w-6xl">
+                <div className="container md:max-w-6xl lg:max-w-6xl 2xl:max-w-7xl">
                     
                     <div className="grid grid-flow-row grid-cols-1 items-center gap-4">
                     <Slider {...sliderSettings1}>
@@ -150,7 +150,7 @@ const Offer = () => {
                 </div>
             </div>
             <div className="text-center flex justify-center items-center py-5">
-            <button onClick={openModal} type="button" class="bg-[#f73600] hover:bg-[#060f32] duration-300 ease-in-out uppercase text-[#fff] flex items-center gap-3 justify-center text-[16px] w-[280px] py-3 rounded-full transition-all"><span class="text-[16px] font-medium"> REQUEST A QUOTE</span></button>
+            <button onClick={openModal} type="button" className="bg-[#f73600] hover:bg-[#060f32] duration-300 ease-in-out uppercase text-[#fff] flex items-center gap-3 justify-center text-[16px] w-[280px] py-3 rounded-full transition-all"><span className="text-[16px] font-medium"> REQUEST A QUOTE</span></button>
             </div>
         </section>
         <hr />

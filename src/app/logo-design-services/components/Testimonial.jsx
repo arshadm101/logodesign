@@ -15,7 +15,7 @@ import formafter from "public/logodesignnew/form_after.webp";
 import CTA from "C/CTA";
 import Form from "C/hero/form/form";
 
-const Testimonial = () => {
+const Testimonial = ({reviews }) => {
     const [isSliderActive, setIsSliderActive] = useState(true);
    
     const sliderSettings1 = {
@@ -75,15 +75,15 @@ const Testimonial = () => {
     return (
         <>
         <section className="font-poppins py-5 testimonials">
-                <div className="container md:max-w-6xl lg:max-w-6xl">
-                    <div class="grid grid-flow-row grid-cols-1 items-center gap-x-3 mb-10">
-                        <h2 class="text-[30px] text-center pt-10 text-[#060f32] font-bold">Our Valued Clients Are Our Asset
-</h2><p class="text-[16px] text-[#74767d] text-center">Our relationship with clients are more than just about the work that we do, they are a huge part of who we are. At The Creative Logo Design, we consider the success of our clients as a barometer of how successful we are. Have a look at some of our customer reviews below.
+                <div className="container md:max-w-6xl lg:max-w-6xl 2xl:max-w-7xl">
+                    <div className="grid grid-flow-row grid-cols-1 items-center gap-x-3 mb-10">
+                        <h2 className="text-[30px] text-center pt-10 text-[#060f32] font-bold">Our Valued Clients Are Our Asset 
+</h2><p className="text-[16px] text-[#74767d] text-center">Our relationship with clients are more than just about the work that we do, they are a huge part of who we are. At The Creative Logo Design, we consider the success of our clients as a barometer of how successful we are. Have a look at some of our customer reviews below.
 
 </p>
                    
                     </div>
-                    <div className="grid grid-flow-row grid-cols-1 items-center gap-5 py-0 relative pb-10">
+                    {/* <div className="grid grid-flow-row grid-cols-1 items-center gap-5 py-0 relative pb-10">
                       <Slider {...sliderSettings1}>
                         <div className="text-center bg-[#f7f7f7] p-4 relative top-[50px]">
                             <Image  src="/logodesignnew/client1.webp" width={134} height={118} className="mt-[-80px] w-[134px] h-[118px] mx-auto"/>
@@ -114,7 +114,24 @@ const Testimonial = () => {
                             </div>
                         </div>
                       </Slider>
-                    </div>
+                    </div> */}
+
+<div className="grid grid-flow-row grid-cols-1 items-center gap-5 py-0 relative pb-10">
+      <Slider {...sliderSettings1}>
+        {reviews.map((review, index) => (
+          <div key={index} className="text-center bg-[#f7f7f7] p-4 relative top-[50px]">
+            <Image src={review.profile} width={134} height={118} className="mt-[-80px] w-[134px] h-[118px] mx-auto" />
+            <div className="py-5">
+              <p className="text-[#8e9095] text-[15px] font-roboto font-[400]">
+                <em>{review.message}</em>
+              </p>
+              <h4 className="font-semibold pt-5 pb-5 text-[18px] text-[#161e3f]">{review.name}</h4>
+              {review.jd && <p className="text-[#8e9095] text-[15px] font-roboto font-[400]">{review.jd}</p>}
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
                 </div>   
         </section>
         </>

@@ -60,7 +60,7 @@ const Header = () => {
         <>
         <header className="">
             <Navbar className="left-0 right-0 font-roboto px-0 py-0 absolute top-0 z-[40] rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none max-w-screen-1xl">
-                <div className="container max-w-6xl mx-auto">
+                <div className="container max-w-6xl mx-auto  2xl:max-w-7xl">
                     <div className="flex items-center h-24 font-roboto">
                         <Link href="/">
                             <Image src={logow} alt="logo" />

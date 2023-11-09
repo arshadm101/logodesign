@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 function Timer() {
-  const [time, setTime] = useState({ hours: 11, minutes: 22, seconds: 11 });
+  const [time, setTime] = useState({ hours: 16, minutes: 22, seconds: 0 });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -23,42 +23,81 @@ function Timer() {
     return () => clearInterval(timer);
   }, [time]);
 
-  const timerCircle = (radius, strokeColor, dashArray, text, textFontSize) => (
+  
+  const timerCircle = (radius, borderColor, fillColor, dashArray, text, textFontSize, animated, timeText) => (
     <div className="relative">
       <svg xmlns="http://www.w3.org/2000/svg" width={2 * radius} height={2 * radius}>
+        {/* Border Circle */}
         <circle
           cx={radius}
           cy={radius}
-          r={radius - 7}
+          r={radius - 5}
           fill="none"
-          stroke={strokeColor} // Change the color here
-          strokeWidth="7"
+          stroke="#666"
+          strokeWidth="5"
           strokeLinecap="round"
-          strokeDasharray={dashArray}
+          strokeDasharray="330 360"
           transform={`rotate(-90 ${radius} ${radius})`}
         />
+  
+        {/* Timer Circle */}
+        {animated ? (
+          <circle
+            cx={radius}
+            cy={radius}
+            r={radius - 5}
+            fill="none"
+            stroke={fillColor}
+            strokeWidth="5"
+            strokeLinecap="round"
+            strokeDasharray={dashArray}
+            transform={`rotate(-90 ${radius} ${radius})`}
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 ${radius} ${radius}"
+              to="360 ${radius} ${radius}"
+              dur={`${3600 * (animated === 'hours' ? 12 : 60)}s`}
+              repeatCount="indefinite"
+            />
+          </circle>
+        ) : (
+          <circle
+            cx={radius}
+            cy={radius}
+            r={radius - 5}
+            fill="none"
+            stroke="#666"
+            strokeWidth="5"
+            strokeLinecap="round"
+            strokeDasharray="330 360"
+            transform={`rotate(-90 ${radius} ${radius})`}
+          />
+        )}
       </svg>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <h4 className={`text-${textFontSize} font-roboto uppercase`}>{text}</h4>
+        <h4 className={`text-[7px] font-roboto uppercase`}>{text}</h4>
+        <span className="font-bold">{timeText}</span>
       </div>
     </div>
   );
+  
+  
 
   return (
     <div className="flex items-center text-center justify-center xl:justify-start lg:justify-start md:justify-start">
-      <div className="mx-2 w-[65px] py-[10px] rounded-[50%] border-solid border-[5px] border-[#666]" >
-        <h4 className="text-[7px] font-roboto uppercase">Hours</h4>
-        <span className="font-bold">{time.hours.toString().padStart(2, '0')}</span>
-      </div>
-      <div className="mx-2 w-[65px] py-[10px] rounded-[50%] border-solid border-[5px] border-[#666]">
-        <h4 className="text-[7px] font-roboto uppercase">Minutes</h4>
-        <span className="font-bold">{time.minutes.toString().padStart(2, '0')}</span>
-      </div>
-      <div className="mx-2 w-[65px] py-[10px] rounded-[50%] border-solid border-[5px] border-[#fcad1e]">
-        <h4 className="text-[7px] font-roboto uppercase">Seconds</h4>
-        <span className="font-bold">{time.seconds.toString().padStart(2, '0')}</span>
-      </div>
-    </div>
+  <div className="mx-2">
+    {timerCircle(35, '#666', '#fcad1e', `${(time.hours % 12) * 30} 360`, 'Hours', '7', 'hours', time.hours.toString().padStart(2, '0'))}
+  </div>
+  <div className="mx-2">
+    {timerCircle(35, '#666', '#fcad1e', `${time.minutes * 6} 360`, 'Minutes', '7', 'minutes', time.minutes.toString().padStart(2, '0'))}
+  </div>
+  <div className="mx-2">
+    {timerCircle(35, '#666', '#fcad1e', `${time.seconds * 6} 360`, 'Seconds', '7', 'seconds', time.seconds.toString().padStart(2, '0'))}
+  </div>
+</div>
+
   );
 }
 
